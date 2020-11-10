@@ -7,12 +7,18 @@ export default class Homepage extends React.Component {
       <div>
         <h2>Welcome to the portfolio of Brendan Monte</h2>
         <br />
-        <Link to="/audio" className="btn btn-primary btn-lg" role="button">
-          Click here for Audio
-        </Link>
-        <button type="button" onClick={this.onClick}>
-          Click here for Programming
-        </button>
+        <div className="main-display">
+          <Link to="/audio" className="btn btn-primary btn-lg" role="button">
+            Click here for Audio
+          </Link>
+          <Link
+            to="/programming"
+            className="btn btn-primary btn-lg"
+            role="button"
+          >
+            Click here for Programming
+          </Link>
+        </div>
       </div>
     )
   }

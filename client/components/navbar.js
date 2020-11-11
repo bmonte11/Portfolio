@@ -7,17 +7,17 @@ import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    {/* <h1>Brendan Monte</h1> */}
-    {/* <img src={process.env.PUBLIC_URL + logo} /> */}
     <nav>
       <div className="nav-items">
         {/* The navbar will show these links before you log in */}
         <Link to="/home">Home</Link>
         <Link to="/audio">Audio</Link>
-        <img
-          src="https://images.squarespace-cdn.com/content/5a3022f190bcce72c7b82f3c/1535738283857-CYMF7IV65Q7VKOOPX617/BrendanMonte_logo.png?content-type=image%2Fpng"
-          alt="logo"
-        />
+        <Link to="/home">
+          <img
+            src="https://images.squarespace-cdn.com/content/5a3022f190bcce72c7b82f3c/1535738283857-CYMF7IV65Q7VKOOPX617/BrendanMonte_logo.png?content-type=image%2Fpng"
+            alt="logo"
+          />
+        </Link>
         <Link to="/programming">Coding</Link>
         <Link to="/about">About Me</Link>
       </div>

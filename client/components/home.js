@@ -8,19 +8,15 @@ export default class Homepage extends React.Component {
         {/* <h2>Welcome to the portfolio of Brendan Monte</h2> */}
         <br />
         <div className="row no-gutters">
-          <div className="col-md-6 no-gutters">
-            <Link to="/audio">
-              <div className="leftside d-flex justify-content-center align-items-center">
-                Click here for Audio
-              </div>
-            </Link>
+          <div className="col-md-6 no-gutters left">
+            <div className="leftside d-flex justify-content-center align-items-center">
+              <Link to="/audio">Click here for Audio</Link>
+            </div>
           </div>
-          <div className="col-md-6 no-gutters">
-            <Link to="/programming">
-              <div className="rightside d-flex justify-content-center align-items-center">
-                Click here for Programming
-              </div>
-            </Link>
+          <div className="col-md-6 no-gutters right">
+            <div className="rightside d-flex justify-content-center align-items-center">
+              <Link to="/programming">Click here for Programming</Link>
+            </div>
           </div>
         </div>
         {/* <div className="main-display">

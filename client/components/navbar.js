@@ -3,28 +3,24 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
-// import logo from './Logo.jpg'
+// import Logo from '../../public/Logo.jpg'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1>Brendan Monte</h1>
+    {/* <h1>Brendan Monte</h1> */}
     {/* <img src={process.env.PUBLIC_URL + logo} /> */}
     <nav>
-      {isLoggedIn ? (
-        <div>
-          {/* The navbar will show these links after you log in */}
-          <Link to="/home">Home</Link>
-          <a href="#" onClick={handleClick}>
-            Logout
-          </a>
-        </div>
-      ) : (
-        <div>
-          {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
-        </div>
-      )}
+      <div className="nav-items">
+        {/* The navbar will show these links before you log in */}
+        <Link to="/home">Home</Link>
+        <Link to="/audio">Audio</Link>
+        <img
+          src="https://images.squarespace-cdn.com/content/5a3022f190bcce72c7b82f3c/1535738283857-CYMF7IV65Q7VKOOPX617/BrendanMonte_logo.png?content-type=image%2Fpng"
+          alt="logo"
+        />
+        <Link to="/programming">Coding</Link>
+        <Link to="/about">About Me</Link>
+      </div>
     </nav>
     <hr />
   </div>

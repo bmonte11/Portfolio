@@ -61,18 +61,19 @@ img {
 }
 
 .leftside {
-  background-color: red;
+  background: url('./Brendan\ Website\ Image-1.jpg') 60% 43%;
   left: 0;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(5px);
 }
 
 .rightside {
-  background-color: blue;
-  background-position: right;
-  right: 0;
+  background: url('./Brendan\ Website\ Image-2.jpg') 51% 45%;
+  box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter: blur(5px);
 }
 
 .rightside:before {
-  content: 'OR';
   font-weight: bold;
   position: absolute;
   background: white;
@@ -82,8 +83,8 @@ img {
   line-height: 30px;
   border-radius: 15px;
   top: 150px;
-  left: 0;
-  -webkit-transform: translate(-50%, -50%);
+  /* left: 0; */
+  /* -webkit-transform: translate(-50%, -50%); */
   /* transform: initial; */
 }
 
@@ -99,17 +100,16 @@ img {
   top: 20px;
 }
 
-.rightside:after {
-  right: 0;
-}
 .leftside:hover {
-  width: 120%;
+  /* width: 105%; */
+  filter: blur(0);
 }
 .leftside:hover + .rightside {
-  width: 80%;
+  width: -80%;
 }
 .rightside:hover {
-  width: 120%;
+  /* width: 105%; */
+  filter: blur(0);
 }
 .rightside:hover + .leftside {
   width: 80%;

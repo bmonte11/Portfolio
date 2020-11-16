@@ -8,6 +8,7 @@ import Homepage from './components/home'
 import Audio from './components/audio'
 import Programming from './components/coding'
 import About from './components/about'
+import Music from './components/music'
 
 /**
  * COMPONENT
@@ -29,6 +30,7 @@ class Routes extends Component {
         <Route path="/audio" component={Audio} />
         <Route path="/programming" component={Programming} />
         <Route path="/about" component={About} />
+        <Route path="/music" compontent={Music} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

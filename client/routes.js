@@ -9,6 +9,9 @@ import Audio from './components/audio'
 import Programming from './components/coding'
 import About from './components/about'
 import Music from './components/music'
+import Post from './components/post-prod'
+import SoundDesign from './components/sound-design'
+import Live from './components/live'
 
 /**
  * COMPONENT
@@ -30,7 +33,10 @@ class Routes extends Component {
         <Route path="/audio" component={Audio} />
         <Route path="/programming" component={Programming} />
         <Route path="/about" component={About} />
-        <Route path="/music" compontent={Music} />
+        <Route path="/music" component={Music} />
+        <Route path="/post-prod" component={Post} />
+        <Route path="/sound-design" component={SoundDesign} />
+        <Route path="/live-recordings" component={Live} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

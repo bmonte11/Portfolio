@@ -14,21 +14,26 @@ export default class Audio extends React.Component {
               <Link to="/music">Music</Link>
               <ReactPlayer url="https://www.youtube.com/watch?list=PLGNPBakM-N7_jnMBih8VOibJsLDGTTGEz&v=EPEEKVw8z9E&feature=emb_title" />
             </li>
-            <li>Post-Production</li>
-            <li>Sound Design</li>
+            <li>
+              <Link to="/post-prod">Post-Production </Link>
+              <ReactPlayer url="https://www.youtube.com/watch?v=-BstMcit8VQ&feature=emb_logo" />
+            </li>
+            <li>
+              <Link to="/sound-design">Sound Design </Link>
+              <ReactPlayer url="https://soundcloud.com/brendan-monte-468088930/odessa-sample" />
+            </li>
             <li>
               Podcasts
               <SpotifyPlayer
                 uri="spotify:show:0X3UA06nnixzRwYciBNIeA"
-                size={{
-                  width: '50%',
-                  height: 300
-                }}
                 view="list"
                 theme="black"
               />
             </li>
-            <li>Live Recording</li>
+            <li>
+              <Link to="/live-recordings"> Live Recording </Link>
+              <ReactPlayer url="https://www.youtube.com/watch?v=PdqO98xI0lw&t=0s" />
+            </li>
           </ul>
         </div>
       </div>

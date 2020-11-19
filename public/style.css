@@ -114,3 +114,29 @@ img {
 .rightside:hover + .leftside {
   width: 80%;
 }
+
+.project {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.techstack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}

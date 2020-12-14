@@ -7,7 +7,7 @@ export default class Music extends React.Component {
     return (
       <div>
         <h1>Recording, Production, Mixing, Mastering</h1>
-        <div>
+        <div className="audio-media">
           <SpotifyPlayer
             uri="spotify:playlist:4gpLvDju8C1zqnhcrvSb2y"
             size={{

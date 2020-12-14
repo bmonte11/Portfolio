@@ -20,6 +20,7 @@ const Navbar = ({handleClick, isLoggedIn}) => (
         </Link>
         <Link to="/programming">Coding</Link>
         <Link to="/about">About Me</Link>
+        <Link to="/contact">Contact</Link>
       </div>
     </nav>
     <hr />

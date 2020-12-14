@@ -2,16 +2,13 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import SpotifyPlayer from 'react-spotify-player'
 import {Link} from 'react-router-dom'
-
-const size = {
-  width: '100%',
-  height: 300
-}
+import Back from './back'
 
 export default class Audio extends React.Component {
   render() {
     return (
       <div>
+        <Back history={this.props.history} />
         <h1>Projects</h1>
         <div>
           <ul className="audio-projects">

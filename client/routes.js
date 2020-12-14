@@ -37,6 +37,7 @@ class Routes extends Component {
         <Route path="/post-prod" component={Post} />
         <Route path="/sound-design" component={SoundDesign} />
         <Route path="/live-recordings" component={Live} />
+        <Route path="/podcasts" component={Live} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

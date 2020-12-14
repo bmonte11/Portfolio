@@ -1,12 +1,32 @@
 import React from 'react'
 import ReactPlayer from 'react-player'
 import {Link} from 'react-router-dom'
+import Back from './back'
 
 export default class Programming extends React.Component {
   render() {
     return (
       <div>
+        <Back history={this.props.history} />
         <h1>Tech Projects</h1>
+        <div className="project">
+          <h3>iSearchMovies</h3>{' '}
+          <div className="description">
+            <span>
+              A simple movie search app that allows a user to search IMDB for
+              their favorite movie titles and leave a rating.
+            </span>
+          </div>
+          <div className="techstack">
+            <span>
+              Technology: Javascript, React, Redux, Express, Sequelize
+            </span>
+            <img
+              className="gif-vid"
+              src="http://g.recordit.co/lBWVJdPcOa.gif"
+            />
+          </div>
+        </div>
         <div className="project">
           <h3>Audtari</h3>{' '}
           <div className="description">
@@ -18,9 +38,7 @@ export default class Programming extends React.Component {
             </span>
           </div>
           <div className="techstack">
-            <span>
-              <bold>Technology:</bold> Javascript, React, Firebase, p5
-            </span>
+            <span>Technology: Javascript, React, Firebase, p5</span>
             <ReactPlayer url="https://youtu.be/ceDXIIs-rDo" />
           </div>
         </div>
@@ -34,8 +52,7 @@ export default class Programming extends React.Component {
           </div>
           <div className="techstack">
             <span>
-              <bold>Technology:</bold> Javascript, React, Redux, Express,
-              Sequelize
+              Technology: Javascript, React, Redux, Express, Sequelize
             </span>
           </div>
         </div>
@@ -50,9 +67,7 @@ export default class Programming extends React.Component {
             </span>
           </div>
           <div className="techstack">
-            <span>
-              <bold>Technology:</bold> C++, JUCE
-            </span>
+            <span>Technology: C++, JUCE</span>
             <ReactPlayer url="https://youtu.be/Xciaq8a7Rto" />
           </div>
         </div>
@@ -67,9 +82,7 @@ export default class Programming extends React.Component {
             </span>
           </div>
           <div className="techstack">
-            <span>
-              <bold>Technology:</bold> Javascript, React, Howl.js
-            </span>
+            <span>Technology: Javascript, React, Howl.js</span>
             <ReactPlayer url="https://youtu.be/W73rVFj84EE" />
           </div>
         </div>

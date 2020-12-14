@@ -1,9 +1,11 @@
 import React from 'react'
+import Back from './back'
 
 export default class About extends React.Component {
   render() {
     return (
       <div>
+        <Back history={this.props.history} />
         <h1>This is the About page</h1>
         <span>
           A background in theater and music performance, Brendan uses his

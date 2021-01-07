@@ -13,17 +13,20 @@ export default class Audio extends React.Component {
         <div>
           <ul className="audio-projects">
             <li className="audio-link">
-              <Link className="audio-title" to="/music">
-                Music
+              <Link className="audio-title" to="/audio/music">
+                <h1>Music</h1>
               </Link>
-              <ReactPlayer
+              <SpotifyPlayer
+                uri="spotify:album:1m8FLe47nkhWyBRw9AX4WR"
+                size={{width: 640, height: 360}}
+                view="coverart"
+                theme="black"
                 className="audio-media"
-                url="https://www.youtube.com/watch?list=PLGNPBakM-N7_jnMBih8VOibJsLDGTTGEz&v=EPEEKVw8z9E&feature=emb_title"
               />
             </li>
             <li className="audio-link">
-              <Link className="audio-title" to="/post-prod">
-                Post-Production{' '}
+              <Link className="audio-title" to="/audio/post-prod">
+                <h1> Post-Production </h1>
               </Link>
               <ReactPlayer
                 className="audio-media"
@@ -31,8 +34,8 @@ export default class Audio extends React.Component {
               />
             </li>
             <li className="audio-link">
-              <Link className="audio-title" to="/sound-design">
-                Sound Design{' '}
+              <Link className="audio-title" to="/audio/sound-design">
+                <h1> Sound Design </h1>
               </Link>
               <ReactPlayer
                 className="audio-media"
@@ -40,9 +43,9 @@ export default class Audio extends React.Component {
               />
             </li>
             <li className="audio-link">
-              <Link className="audio-title" to="/sound-design">
+              <Link className="audio-title" to="/audio/podcasts">
                 {' '}
-                Podcasts{' '}
+                <h1>Podcasts </h1>
               </Link>
               <SpotifyPlayer
                 uri="spotify:show:0X3UA06nnixzRwYciBNIeA"
@@ -53,9 +56,9 @@ export default class Audio extends React.Component {
               />
             </li>
             <li className="audio-link">
-              <Link className="audio-title" to="/live-recordings">
+              <Link className="audio-title" to="/audio/live-recordings">
                 {' '}
-                Live Recording{' '}
+                <h1>Live Recording </h1>
               </Link>
               <ReactPlayer
                 className="audio-media"

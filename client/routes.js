@@ -30,14 +30,14 @@ class Routes extends Component {
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />
         <Route path="/home" component={Homepage} />
-        <Route path="/audio" component={Audio} />
         <Route path="/programming" component={Programming} />
         <Route path="/about" component={About} />
-        <Route path="/music" component={Music} />
-        <Route path="/post-prod" component={Post} />
-        <Route path="/sound-design" component={SoundDesign} />
-        <Route path="/live-recordings" component={Live} />
-        <Route path="/podcasts" component={Live} />
+        <Route exact path="/audio/music" component={Music} />
+        <Route exact path="/audio/post-prod" component={Post} />
+        <Route exact path="/audio/sound-design" component={SoundDesign} />
+        <Route exact path="/audio/live-recordings" component={Live} />
+        <Route exact path="/audio/podcasts" component={Live} />
+        <Route path="/audio" component={Audio} />
         {isLoggedIn && (
           <Switch>
             {/* Routes placed here are only available after logging in */}

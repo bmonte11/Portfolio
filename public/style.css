@@ -4,8 +4,14 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 2rem;
 }
+
+/* a.audio-title {
+  font-size: large;
+} */
 
 label {
   display: block;
@@ -139,6 +145,10 @@ img {
 h1 {
   display: flex;
   justify-content: center;
+}
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .audio-projects {

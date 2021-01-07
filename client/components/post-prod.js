@@ -7,6 +7,10 @@ export default class Post extends React.Component {
       <div>
         <h1>Post-Production</h1>
         <div />
+        <ReactPlayer
+          className="audio-media"
+          url="https://vimeo.com/355761239"
+        />
       </div>
     )
   }

@@ -10,16 +10,16 @@ export default class Homepage extends React.Component {
         <div className="row no-gutters">
           <div className="col-md-6 no-gutters left">
             <Link to="/audio">
-              <div className="leftside d-flex justify-content-center align-items-center">
+              <h2 className="leftside d-flex justify-content-center align-items-center">
                 Click here for Audio
-              </div>
+              </h2>
             </Link>
           </div>
           <div className="col-md-6 no-gutters right">
             <Link to="/programming">
-              <div className="rightside d-flex justify-content-center align-items-center">
+              <h2 className="rightside d-flex justify-content-center align-items-center">
                 Click here for Programming
-              </div>
+              </h2>
             </Link>
           </div>
         </div>

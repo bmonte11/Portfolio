@@ -2,15 +2,7 @@ import React from 'react'
 import ReactPlayer from 'react-player'
 import SpotifyPlayer from 'react-spotify-player'
 import ProgressSlider from './Slider/slider'
-import ReactHowler from 'react-howler'
 import {Howl} from 'howler'
-
-const capSong = new Howl({
-  src: ['/Bad Guy 4 dash 15 Dev Before.mp3']
-})
-// const capSongMixed = new ReactHowler({
-//   src: ['Bad Guy- Master.mp3'],
-// })
 
 export default class Music extends React.Component {
   constructor(props) {
@@ -22,6 +14,14 @@ export default class Music extends React.Component {
       song2: null,
       value: 0
     }
+    this.capSong = new Howl({
+      src: ['/Bad Guy Before.mp3'],
+      volume: 1
+    })
+    this.capSongMixed = new Howl({
+      src: ['/Bad Guy After.mp3'],
+      volume: 0
+    })
     this.handleChange = this.handleChange.bind(this)
     this.playSong = this.playSong.bind(this)
     this.play = this.play.bind(this)
@@ -55,18 +55,25 @@ export default class Music extends React.Component {
   }
 
   play() {
+    this.capSong.play()
+    this.capSongMixed.play()
     this.setState({
-      playing: true
+      playing: true,
+      song1: this.capSong,
+      song2: this.capSongMixed
     })
   }
 
   pause() {
+    this.capSong.pause()
+    this.capSongMixed.pause()
     this.setState({
       playing: false
     })
   }
 
   handleChange(event) {
+    // event.preventDefault()
     this.setState({
       value: event
     })
@@ -96,15 +103,21 @@ export default class Music extends React.Component {
         <br />
         <h3>The B-Mo Audio Difference</h3>
         <h4>From A Cappella</h4>
-        <ReactHowler
+        {/* <ReactHowler
           src={['/Bad Guy 4 dash 15 Dev Before.mp3']}
           playing={this.state.playing}
-        />
+        /> */}
         <ProgressSlider
-          handleChange={this.handleChange}
+          handleOnChange={this.handleChange}
+          orientation="horizontal"
           value={this.state.value}
         />
-        <button type="button" onClick={this.play}>
+        <button
+          type="button"
+          onClick={() => {
+            this.playSong(this.capSong, this.capSongMixed)
+          }}
+        >
           Play
         </button>
         <button type="button" onClick={this.pause}>

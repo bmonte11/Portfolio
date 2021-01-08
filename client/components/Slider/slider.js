@@ -13,7 +13,7 @@ export default class ProgressSlider extends React.Component {
           value={this.props.value}
           orientation="horizontal"
           labels={slideLabels}
-          onChange={this.props.handleChange}
+          onChange={this.props.handleOnChange}
         />
       </div>
     )
